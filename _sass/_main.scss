@@ -1,10 +1,74 @@
 .jumbotron {
   background-image: url(/img/beach.jpg);
-  background-size: cover;
+  background-position: top 75% left 50%;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-size: cover;
   height: 565px;
   padding-top: 0;
+  color: #FFF;
+  .showcase {
+    padding: 2em;
+    background: rgba(247,148,30,0.7);
+    text-align: center;
+    margin-top: 10em;
+    font-weight: bolder;
+    h1 {
+      font-weight: bold;
+      margin: 1em auto;
+      // -webkit-text-stroke: 1px #333;
+    }
+    button {
+      padding: .5em 1em;
+      font-size: 2em;
+    }
+  }
+
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#donate, #about {
+  @extend .container;
+  font-size: 2em;
+  img {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
+
+.navbar {
+  li > a {
+    font-size: 2em;
+    font-weight: bolder;
+    // -webkit-text-stroke: 1px #333;
+  }
+}
+
+.page-heading {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 1em auto;
+}
+
+footer {
+  background-color: #5495ff;
+  font-size: 1.7em;
+  color: #fff;
+  padding: 1.5em 0;
+  margin: 2em auto 0;
+}
+
+.donorbox-container {
+  @extend .row;
+  margin: 1em auto;
+}
+
+.navbar-right {
+  background: rgba(84,149,255,0.8);
 }
 
 // .navbar-default {
